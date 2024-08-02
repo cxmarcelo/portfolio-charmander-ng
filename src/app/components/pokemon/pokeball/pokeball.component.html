@@ -1,0 +1,18 @@
+<div class="pokeball" [class.open-pokeball]="open">
+
+    <div class="pokeball-side pokeball-top" [ngClass]="portfolio.classCss" style="z-index: 2;">
+        <img [src]="portfolio.frameworkImg" class="pokeball-logo">
+
+
+        <div class="pokemon-center" (click)="toggleDoors()">
+        </div>
+    </div>
+    <div class="pokeball-side pokeball-bottom"></div>
+
+    <div class="pokeball-content d-flex flex-column justify-content-center align-items-center"
+        [ngClass]="portfolio.classCss" style="z-index: 0;">
+        <img [src]="portfolio.pokemonImg" alt="" style="max-height: 100px; ">
+        <a href="" class="text-white">{{portfolio.url}}</a>
+    </div>
+
+</div>

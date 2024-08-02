@@ -1,0 +1,109 @@
+.pokeball {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-width: 3px;
+    color: var(--color-red);
+    position: relative;
+
+    h5 {
+        color: var(--color-white);
+    }
+
+    .pokeball-content {
+        height: 100%;
+    }
+
+    .pokeball-side {
+        height: 200px;
+        width: 400px;
+        z-index: 1;
+        transition: transform 0.25s ease-in-out;
+        position: absolute;
+
+    }
+
+    .pokeball-top {
+        justify-content: center;
+        border-bottom: 10px solid #222224;
+        width: 400px;
+
+
+        .pokeball-logo {
+            max-height: 100px;
+            position: relative;
+            bottom: -50px;
+            right: -150px;
+
+        }
+
+
+        .pokemon-center {
+            cursor: pointer;
+            position: relative;
+            bottom: -50px;
+            right: -150px;
+            height: 100px;
+            width: 100px;
+            border: 10px solid #222224;
+            border-radius: 100%;
+            background-color: white;
+        }
+
+    }
+
+    .pokeball-bottom {
+        top: 200px;
+        height: 200px;
+        background-color: #f0f0f0;
+    }
+}
+
+.pokeball-content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.pokeball:hover .pokeball-top {
+    transform: translateY(-150%);
+}
+
+.pokeball:hover .pokeball-bottom {
+    transform: translateY(100%);
+}
+
+.pokeball-content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.pokeball-content.charmander {
+    background-color: var(--pokeball-bg-charmander);
+}
+
+.pokeball-content.squirtle {
+    background-color: var(--pokeball-bg-squirtle);
+}
+
+.pokeball-content.bulbasaur {
+    background-color: var(--pokeball-bg-bulbasaur);
+}
+
+.charmander {
+    background-color: var(--pokeball-top-charmander);
+}
+
+.squirtle {
+    background-color: var(--pokeball-top-squirtle);
+}
+
+.bulbasaur {
+    background-color: var(--pokeball-top-bulbasaur);
+}

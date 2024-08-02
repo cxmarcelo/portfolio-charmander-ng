@@ -1,0 +1,65 @@
+<nav class="navbar navbar-dark bg-menu navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="home">
+            <img src="./assets/images/charmander.png" class="logo" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="home" routerLinkActive="active">Home</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="terminal" routerLinkActive="active">Terminal</a>
+                </li>
+                -->
+
+                <!--
+
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="projects" routerLinkActive="active">Projetos</a>
+                </li>
+                -->
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="education/courses" routerLinkActive="active">Cursos</a>
+                </li>
+            </ul>
+            <div class="me-5">
+                <!--
+                <p-dropdown [options]="languaguesList" [(ngModel)]="selectedLanguage" optionLabel="name"
+                    styleClass="dropdown-language" (onChange)="onChangeLanguage($event)">
+                    <ng-template pTemplate="selectedItem">
+                        <div class="flags-dropdown-line" *ngIf="selectedLanguage">
+                            <i [class]="selectedLanguage.flag"></i>
+                            <div class="flags-dropdown-selectedItem">{{selectedLanguage.name}}</div>
+                        </div>
+                    </ng-template>
+                    <ng-template let-language pTemplate="item">
+                        <div class="flags-dropdown-line">
+                            <i [class]="language.flag"></i>
+                            <div>{{language.name}}</div>
+                        </div>
+                    </ng-template>
+                </p-dropdown>
+                -->
+
+            </div>
+            <!--
+            <div class="d-flex">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                        (click)="changeMode()" />
+                </div>
+
+
+            </div>
+            -->
+        </div>
+    </div>
+</nav>
