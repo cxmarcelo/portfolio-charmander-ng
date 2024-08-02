@@ -31,6 +31,7 @@ body {
 }
 
 .circle-container {
+    z-index: -1;
     $particleWidth: 15;
     $particleNum: 200;
     $particleColor: hsl(180, 100%, 80%);
